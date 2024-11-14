@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&display=swap');
+
+.App-logo {
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+}
+
+.Logo-img {
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 96px;
+    width: 96px;
+}
+
+.just-me-again-down-here-regular {
+  font-family: "Just Me Again Down Here", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
