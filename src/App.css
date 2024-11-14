@@ -10,3 +10,12 @@
 App-header{
   background-color: #FF3F00;
 }
+
+.texto_construcao {
+  font-family: "Just Me Again Down Here", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  font-size: 50px;
+  text-align: center;
+}
