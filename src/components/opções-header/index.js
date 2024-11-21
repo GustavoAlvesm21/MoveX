@@ -21,18 +21,23 @@ const Opcoes = styled.ul`
   width: 80%;
 `;
 
-const textoOpcoes = ['Projetos', 'App'];
+const textoOpcoes = ['Github do App'];
+const urls = ['https://github.com/ElismarSilva/MoveX/tree/master'];
 
 function OpcoesHeader(){
-    return(
-        <Opcoes>
-          {textoOpcoes.map((texto) => {
-            return (
-              <Opcao><p>{texto}</p></Opcao>
-            );
-          })}
-        </Opcoes>
-    );
+  return(
+      <Opcoes>
+        {textoOpcoes.map((texto, index) => {
+          return (
+            <Opcao key={index}>
+              <a href={urls[index]} target="_blank" rel="noopener noreferrer">
+                <p>{texto}</p>
+              </a>
+            </Opcao>
+          );
+        })}
+      </Opcoes>
+  );
 }
 
 export default OpcoesHeader;

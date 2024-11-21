@@ -28,6 +28,12 @@ const GlobalStyle = createGlobalStyle`
   li {
     list-style: none;
   }
+
+  a {
+    color : inherit;
+    text-decoration: none;
+  }
+
 `;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

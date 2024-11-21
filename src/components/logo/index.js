@@ -14,6 +14,16 @@ const LogoStyleImg = styled.img`
     margin-left: 35px;
     height: 96px;
     width: 96px;
+    animation: App-logo-spin infinite 15s linear;
+
+    @keyframes App-logo-spin {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
 `;
 
 const AppLogo = styled.div`

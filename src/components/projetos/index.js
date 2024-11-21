@@ -21,16 +21,14 @@ const BoxProjetos = styled.a`
     height: 540px;
     margin: 150px;
     text-decoration: none;
+    color: white; /* Adicione esta linha para garantir que o texto seja visível */
 `;
 
 function Projetos() {
     return (
         <GridProjetos>
-            <BoxProjetos href="#" backgroundImage={PlaceHolder}>
-                Projeto
-            </BoxProjetos>
-            <BoxProjetos href="#" backgroundImage={PlaceHolder}>
-                Projeto
+            <BoxProjetos href="/projetoUm" backgroundImage={PlaceHolder}>
+                Projeto Um
             </BoxProjetos>
         </GridProjetos>
     );

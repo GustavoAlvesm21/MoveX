@@ -6,6 +6,7 @@ const Texto = styled.p`
     font-size: 30px;
     width: 100%
     position: relative;
+    white-space: pre-wrap; 
 `;
 
 export default Texto;
