@@ -42,12 +42,12 @@ export const Titulo = styled.h2`
     }
 `;
 
-function Projects() {
+function Projetos() {
     return (
         <GridContainer>
             <Titulo>Veja nosso projetos</Titulo>
             <ProjectBox 
-                href="/projectOne" 
+                href="/ProjetoUm" 
                 backgroundImage={GifRoboUm}>
             </ProjectBox>
         </GridContainer>
@@ -59,4 +59,4 @@ ProjectBox.propTypes = {
     backgroundImage: PropTypes.string.isRequired,
 };
 
-export default Projects;
+export default Projetos;
