@@ -9,7 +9,11 @@ const DivisaoImg = styled.img`
     display: block;
     margin: 150px auto 0 auto;
     width: 724px;
-    height: 150;
+    height: 150px;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
 `;
 
 function Divisao() {

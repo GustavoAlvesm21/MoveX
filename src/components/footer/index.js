@@ -4,35 +4,47 @@ import Texto from "../Texto";
 const FooterStyle = styled.footer`
     display: flex;
     background-color: #FF3F00;
-    height: 150px;
+    height: auto;
     flex-direction: column;
     justify-content: center;
-    padding: 20px 90px;
+    align-items: center;
+    padding: 20px 20px;
     position: relative;
+    
+    @media (max-width: 600px) {
+        padding: 20px 10px;
+    }
 `;
 
 const LinksContainer = styled.div`
     display: flex;
-    flex-direction: column;
-    position: absolute;
-    right: 90px;
-    top: 20px;
-    display: flex;
-    gap: 40px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
+    @media (max-width: 600px) {
+        flex-direction: column;
+        gap: 10px;
+    }
 `;
 
 const Link = styled.a`
     color: black;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
 `;
 
 function Footer() {
     return (
         <FooterStyle>
-            <Link href="https://github.com/GustavoAlvesm21/MoveX" >Repositório MoveX</Link>
-            <Texto>© 2021 - Todos os direitos reservados</Texto>
             <LinksContainer>
+                <Link href="https://github.com/GustavoAlvesm21/MoveX" >Repositório MoveX</Link>
                 <Link href="https://github.com/GustavoAlvesm21">GitHub: @ElismarSilva</Link>
                 <Link href="https://github.com/ElismarSilva/MoveX/tree/master">GitHub: @GustavoAlvesm21</Link>
             </LinksContainer>

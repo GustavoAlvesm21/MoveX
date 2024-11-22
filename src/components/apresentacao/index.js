@@ -3,43 +3,45 @@ import styled from 'styled-components';
 import TextoDestacado from '../TextoDestacado';
 import Texto from '../Texto';
 import Walee from '../../images/walle.png';
-import PlaceHolder from '../../images/place_holder.png';
-import breakpoints from '../styles/breakpoints';
+import imagemApresentacao from '../../images/imagem_apresentacao.webp';
 
 const ContainerApresentacao = styled.div`
   width: 100vw;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const WaleeImg = styled.img`
-  display: flex;
+  display: block;
   padding: 0 150px;
   margin-left: auto;
 `;
 
 const Deladin = styled.div`
   display: flex;
-  unicode-bidi: isolate;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
 `;
 
 const IntroImg = styled.img`
-  display: flex;
-  padding: 0 130px;
-  margin-right: 0;
-  margin-top: 50px;
+  margin: 50px;
   width: 724px;
   height: 599px;
-  
+  margin-left: 100px;
+
 `;
 
 const TextoDiv = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 0 250px;
   margin-left: auto;
-  margin-right: 0;
+  margin-right: 100px;
   row-gap: 20px;
+
 `;
 
 function Apresentacao() {
@@ -47,13 +49,16 @@ function Apresentacao() {
     <ContainerApresentacao>
       <WaleeImg src={Walee} alt="Walee" />
       <Deladin>
-        <IntroImg src={PlaceHolder} alt="Place-Holder" />
+        <IntroImg src={imagemApresentacao} alt="Place-Holder" />
         <TextoDiv>
           <TextoDestacado>
-            This is a highlighted text example. It should be concise and informative.
+            Muitas pessoas que querem aprender robótica encontram dificuldades devido à complexidade dos conceitos técnicos 
+            e à falta de recursos que tornem o aprendizado acessível e prático.
           </TextoDestacado>
           <Texto>
-            This is a regular text example. It should provide additional information and context.
+            O MoveX tem como objetivo apresentar conceitos básicos de robótica de uma maneira simples e acessível.
+            O excesso de lixo é prejudicial ao meio ambiente. Os "lixões" continuam sendo o destino da maior parte dos resíduos acarretando graves prejuízos ao meio ambiente e a qualidade de vida da população. 
+            Portanto, todos os projetos usam materiais recicláveis como por exemplo o papelão.
           </Texto>
         </TextoDiv>
       </Deladin>

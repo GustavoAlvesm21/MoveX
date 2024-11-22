@@ -6,7 +6,7 @@ import Projetos from '../components/projetos';
 import ImagemFundo from '../images/fundo_place_holder.jpg';
 import Footer from '../components/footer';
 
-export const Inicio = styled.div`
+ const Inicio = styled.div`
   padding: 80px 0;
   height: 100vh;
   width: 100%;
@@ -31,13 +31,7 @@ export const TextoConstrucao = styled.h2`
   margin-top: 450px;
 `;
 
-export const Titulo = styled.h2`
 
-  margin-top: 100px;
-  text-align: center;
-  font-size: 50px; 
-
-`;
 
 function Home() {
     return (
@@ -47,8 +41,6 @@ function Home() {
           <TextoConstrucao>Introdução a robótica com projetos simples</TextoConstrucao>
         </Inicio>
         <Apresentacao />
-        <Divisao />
-        <Titulo>Veja nossos projetos</Titulo>
         <Projetos />
         <Footer />
       </AppGeral>

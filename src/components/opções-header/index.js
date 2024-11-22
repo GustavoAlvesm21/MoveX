@@ -21,6 +21,16 @@ const Opcoes = styled.ul`
   width: 80%;
 `;
 
+export const LinkCustomizado = styled.a`
+  text-decoration: none;
+  color: white;
+  transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+`;
+
 const textoOpcoes = ['Github do App'];
 const urls = ['https://github.com/ElismarSilva/MoveX/tree/master'];
 
@@ -30,9 +40,9 @@ function OpcoesHeader(){
         {textoOpcoes.map((texto, index) => {
           return (
             <Opcao key={index}>
-              <a href={urls[index]} target="_blank" rel="noopener noreferrer">
+              <LinkCustomizado href={urls[index]} target="_blank" rel="noopener noreferrer">
                 <p>{texto}</p>
-              </a>
+              </LinkCustomizado>
             </Opcao>
           );
         })}
