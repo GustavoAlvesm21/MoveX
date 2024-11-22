@@ -45,8 +45,8 @@ function Footer() {
         <FooterStyle>
             <LinksContainer>
                 <Link href="https://github.com/GustavoAlvesm21/MoveX" >Repositório MoveX</Link>
-                <Link href="https://github.com/GustavoAlvesm21">GitHub: @ElismarSilva</Link>
-                <Link href="https://github.com/ElismarSilva/MoveX/tree/master">GitHub: @GustavoAlvesm21</Link>
+                <Link href="https://github.com/GustavoAlvesm21">GitHub: @GustavoAlvesm21</Link>
+                <Link href="https://github.com/ElismarSilva/MoveX/tree/master">GitHub: @ElismarSilva</Link>
             </LinksContainer>
         </FooterStyle>
     );
